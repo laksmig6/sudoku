@@ -4,8 +4,7 @@ import Box from './Box';
 
 describe('Box', () => {
   it('renders component properly',()=> {
-    const wrapper = shallow(<Box />)
-    console.log(wrapper.text());
-    expect(wrapper.html()).to.contain('div');
+    const wrapper = shallow(<Box value='2'/>);
+    expect(wrapper.text()).toBe('2');
   });
 });

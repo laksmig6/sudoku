@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Box = () => (
-  <div className="box"> test text</div>
-)
+const Box = ({value}) => (
+  <div className="box">{value}</div>
+);
 
 export default Box;
